@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookNest - Rent Books</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h3>BookNest</h3>
+    <nav>
+      <a class="a" href="#">Home</a>
+      <a class="a" href="#">Browse</a>
+      <a class="a" href="#">Cart</a>
+    </nav>
+    <nav class="mobile-nav">
+      <a class="a" href="#">Home</a>
+      <a class="a" href="#">Browse</a>
+      <a class="a" href="#">Cart</a>
+    </nav>
+    <img class="burger" src="eec071442e9a1b8e017c5a7c1853b880.jpg" alt="Menu">
+  </header>
+
+  <div id="cart-container" class="cart" style="display: none;">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Total: $0.00</p>
+    <button id="confirm-btn">Confirm Rent</button>
+    <button class="cancel">Cancel</button>
+  </div>
+
+
+  <h1>Available books</h1>
+
+  <div class="container">
+    <div class="box" id="box">
+      <img class="rent" src="book-1984.jpg" alt="">
+      <p>1984</p>
+      <p>by Author 1</p>
+      <p>$1.50/day</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+    <div class="box" id="box">
+      <img class="rent" class="rent" src="book-hobbit.jpg" alt="">
+      <p>The Hobbit</p>
+      <p>by Author 2</p>
+      <p>$2.00/day</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-mockingbird.jpg" alt="">
+      <p>To Kill a Mockingbird</p>
+      <p>by Author 3</p>
+      <p>$2.50/day</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-pride.jpg" alt="">
+      <p>Pride and Prejudice</p>
+      <p>by Author 4</p>
+      <p>$3.00/day</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-mobydick.jpg" alt="">
+      <p>Moby-dick</p>
+      <p>by Author 5</p>
+      <p>$1.00/day</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-warpeace.jpg" alt="">
+      <p>War and Peace</p>
+      <p>by Author 6</p>
+      <p>$1.50/day</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-gatsby.jpg" alt="">
+      <p>The Great Gatsby</p>
+      <p>by Author 7</p>
+      <p>$2.00/day</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-catcher.jpg" alt="">
+      <p>The Catcher in the Rye</p>
+      <p>by Author 8</p>
+      <p>$2.50</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-bravenew.jpg" alt="">
+      <p>Brave New World</p>
+      <p>by Author 9</p>
+      <p>$3.00</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-janeeyre.jpg" alt="">
+      <p>Jane Eyre</p>
+      <p>by Author 10</p>
+      <p>$3.50</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-crime.jpg" alt="">
+      <p>Crime and Punishment</p>
+      <p>by Author 11</p>
+      <p>$2.00</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-anna.jpg" alt="">
+      <p>Anna Karenina</p>
+      <p>by Author 12</p>
+      <p>$2.00</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-alchemist.jpg" alt="">
+      <p>The Alchemist</p>
+      <p>by Author 13</p>
+      <p>$2.00</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-lesmis.jpg" alt="">
+      <p>Les Misérables</p>
+      <p>by Author 14</p>
+      <p>$2.50</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+
+    <div class="box" id="box">
+      <img class="rent" src="book-donquixote.jpg" alt="">
+      <p>Don Quixote</p>
+      <p>by Author 15</p>
+      <p>$1.00</p>
+      <button class="rent-btn">Rent</button>
+    </div>
+  </div>
+
+  <div class="popup">
+    <img class="popup-img" src="" alt="">
+    <div class="right-pop">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cum repudiandae adipisci, possimus ab cumque
+        magnam cupiditate dolore quas. Alias sit magni rem tenetur porro maiores odio sint, dignissimos nisi ipsam
+        molestiae pariatur reprehenderit ratione rerum beatae error maxime minima, laboriosam qui delectus in soluta?
+        Laboriosam eius dignissimos aliquid tempore, iusto eligendi recusandae nam earum provident, qui nisi dolor
+        ratione. Laboriosam, nisi ratione. Libero cumque laborum eum earum fuga quod perferendis nam non, aut labore
+        alias hic iusto assumenda voluptates optio quidem recusandae et voluptatem ex nulla? Dolore architecto
+        exercitationem ipsam incidunt illo itaque, dicta ducimus sit repellat enim porro!</p>
+      <button class="back-btn">back</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
